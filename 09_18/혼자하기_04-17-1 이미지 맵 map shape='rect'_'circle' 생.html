@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>04-17-1 이미지 맵 map shape='rect'_'circle'</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="04-17-1 이미지 맵 map shape='rect'_'circle'">
+    <meta name="publisher" content="Ko Hyunjoung">
+</head>
+<body>
+    <h1>04-17-1 이미지 맵 map shape='rect'_'circle'</h1>
+    <div>
+        <img src="./img/restaurant-img4.jpg" alt="" usemap="#imageMap">
+        <map name="imageMap">
+            <area shape="rect" coords="17,181,337,603" href="http://www.naver.com">
+            <area shape="rect" coords="337,79,727,531" href="http://www.naver.com" target="_blank">
+        <!--<area shape="도형" coords="left 좌표 x1, top 좌표 y1, right 좌표 x2, bottom 좌표 y2"
+            href="프로토콜://컴퓨터이름.회사명.회사종류.국가명"> -->
+            <area shape="circle" coords="536,50,40" href="http://www.naver.com" target="_blank">
+            <area shape="circle" coords="615,65,50" href="http://www.tjoeun.co.kr" target="_blank">
+        <!-- <area shape="circle" coords="원의 중심x 좌표,원의 중심y 좌표,반지름 r"> --> 
+        </map>
+    </div>
+</body>
+</html>

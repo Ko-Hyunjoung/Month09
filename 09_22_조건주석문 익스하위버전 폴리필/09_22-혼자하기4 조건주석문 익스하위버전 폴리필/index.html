@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>웹표준 웹접근성 크로스브라우징 특수크로스브라우징</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+
+    <!--제이쿼리를 사용하게 해주는 오픈소스 -->
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>
+
+    <!--[if lte IE 9]>
+        <script>
+            
+        </script>
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <script>
+            document.createElement("header");
+            document.createElement("main");
+            document.createElement("footer");
+            document.createElement("section");
+
+        </script>
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+        <script>
+
+        </script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+
+    </header>
+    <main id="main">
+        <section id="section1">
+
+        </section>
+        <section id="section2">
+
+        </section>
+
+    </main>
+    <footer id="footer">
+
+    </footer>
+
+</div>  
+</body>
+</html>

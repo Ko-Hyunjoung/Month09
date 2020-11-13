@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>이미지 맵</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="image map">
+    <meta name="publisher" content="Ko Hyunjoung">
+    
+    <style>
+        img {width:744PX;}
+        area:active {outline:1px solid rgb(218, 124, 124)}
+    </style>
+</head>
+<body>
+    <!-- 
+    미만 <   &lt;  엔티티 코드 문자
+    초과 >   &gt;  엔티티 코드 문자
+     -->
+<h1>04-17-1 이미지 맵 &lt;map shape='rect'&gt; 직사각형 영역 생성 사용 방법</h1>
+<div>
+    <img src="./image/restaurant-img4.jpg" alt="" usemap="#rectmap">\
+    <map name="rectmap">
+        <area shape="rect"coords="17,180,337,604" href="http://www.naver.com" target="_blank">
+               <!-- <area shape="도형" coords="left 좌표 x1, top 좌표 y1, right 좌표 x2, bottom 좌표 y2"
+                href="프로토콜://컴퓨터이름.회사명.회사종류.국가명"> -->\
+        <area shape="rect"coords="337,79,726,532" href="http://www.naver.com" target="_blank">        
+        <area shape="circle"coords="536,50,40" href="http://www.naver.com" target="_blank">        
+        <area shape="circle"coords="617,59,47" href="http://www.naver.com" target="_blank">        
+        <area shape="poly"coords="262,603,367,603,367,540,431,540,476,569,511,603,511,640,476,676,431,687,368,687,290,661.262,640" href="http://www.naver.com" target="_blank">        
+    </map>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+#wrap {width:1200px;margin:0 auto;}
+
+/* 헤더영역 */
+#wrap #header {z-index:3;position:relative;width:1200px;}
+#wrap #header:after {content:"";display:block;clear:both;}
+#wrap #header .left {float:left;width:180px;height:100px;background:#555;}
+
+/* 네비게이션 영역 */
+#wrap #header .right {float:left;width:1020px;height:100px;background:#666;}
+#wrap #header .right #nav {padding:55px 27.5px 0 0;}
+#wrap #header .right #nav:after {content:"";display:block;clear:both;}
+#wrap #header .right #nav > ul {float:right;}
+#wrap #header .right #nav > ul > li {position:relative;float:left;width:170px;text-align:center;}
+
+/* 메인메뉴 GNB */
+#wrap #header .right #nav > ul > li .main-btn {display:block;background:#fff;line-height:45px;color:black;width:100%;transition:all .6s;}
+#wrap #header .right #nav > ul > li .main-btn:hover {background:#000;color:#fff;}
+
+/* 서브메뉴 LNB*/
+#wrap #header .right #nav > ul > li .sub {display:none;position:absolute;top:45px;left:0;width:100%;}
+#wrap #header .right #nav > ul > li:hover .sub {display:block;}
+#wrap #header .right #nav > ul > li:focus .sub {display:block;}
+#wrap #header .right #nav > ul > li .sub ul {width:100%;}
+#wrap #header .right #nav > ul > li .sub ul li {width:100%;}
+#wrap #header .right #nav > ul > li .sub ul li a {display:block;line-height:30px;background:#fff;transition:all .1s;}
+#wrap #header .right #nav > ul > li .sub ul li a:hover {background:#000;color:#fff}}
+
+
+
+/* 메인영역 */
+#wrap #main {z-index:1;position:relative;width:1200px;}
+#wrap #main #section1 {width:1200px;height:300px;background:#e6d5d5;}
+#wrap #main #section2 {width:100%;}
+#wrap #main #section2:after {content:"";display:block;clear:both;}
+#wrap #main #section2 .left {float:left;width:33.33%;height:200px;background:#999;}
+#wrap #main #section2 .center {float:left;width:33.33%;height:200px;background:#888;}
+#wrap #main #section2 .right {float:left;width:33.33%;height:200px;background:#777;}
+
+/* 푸터영역 */
+#wrap #footer {z-index:2;position:relative;width:1200px;}
+#wrap #footer:after {content:"";display:block;clear:both;}
+#wrap #footer .left {float:left;width:180px;height:100px;background:#555;}
+#wrap #footer .center {float:left;width:840px;height:100px;background:#666;}
+#wrap #footer .right {float:left;width:180px;height:100px;background:#555;}

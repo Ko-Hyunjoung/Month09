@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#wrapper {width:1200px;height:700px;margin:0 auto;}
+#wrapper #header {width:1200px;height:100px;}
+#wrapper #header .header-left {float:left;width:180px;height:100px;background:#345;}
+#wrapper #header .header-right {float:left;width:1020px;height:100px;background:#566;}
+
+#wrapper #main {width:1200px;height:500px;}
+#wrapper #main #section1 {width:1200px;height:300px;background:#557;}
+#wrapper #main #section2 {width:1200px;height:200px;background:#346;}
+#wrapper #main #section2 .section2-left {float:left;width:400px;height:200px;background:#cc7;}
+#wrapper #main #section2 .section2-middle {float:left;width:400px;height:200px;background:#c6c;}
+#wrapper #main #section2 .section2-right {float:left;width:400px;height:200px;background:#6cc;}
+
+#wrapper #footer {width:1200px;height:100px;background:#556;}
+#wrapper #footer .footer-left {float:left;width:180px;height:100px;background:#345}
+#wrapper #footer .footer-right {float:left;width:1020px;height:100px;}
+#wrapper #footer .footer-right .footer-right-row1 {width:1020px;height:50px;background:#556;}
+#wrapper #footer .footer-right .footer-right-row2 {width:1020px;height:50px;background:#566;}

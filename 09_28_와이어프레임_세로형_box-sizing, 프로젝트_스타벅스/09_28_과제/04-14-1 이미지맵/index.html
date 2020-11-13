@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>04-14-1 이미지맵</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="04-14-1 이미지맵">
+    <meta name="publisher" content="Ko Hyunjoung">
+    <meta name="Author-date" content="2020-09-27">
+    <meta name="Author" content="Ko Hyunjoung">
+    <meta name="Copyright" content="Ko Hyunjoung">
+    <meta name="Keywords" content="이미지맵">
+    <meta name="Description" content="한개의 이미지에 여러개의 링크 걸기">
+    <meta name="Robot" content="index, follow">
+
+    <style>
+        img {width:744;}
+        area:active {outline:1px solid #2d8d6d;}
+    </style>
+
+</head>
+<body>
+
+    <h1>04-17-1 이미지맵</h1>
+    <div>
+        <img src="./img/restaurant-img4.jpg" alt="pizza-restaurant-image" usemap="#imgMap">
+        <map name="imgMap">
+            <area shape="rect" coords="337,79,727,531" href="http://www.naver.com" target="_blank">
+            <area shape="poly" coords="17,181,337,181,337,531,367,531,367,603,17,603" href="http://www.naver.com" target="_blank">
+            <area shape="poly" coords="262,603,367,603,367,539,438,546,488,574,512,603,512,639,488,671,438,685,367,685,302,671,270,639" href="http://www.naver.com">
+            <area shape="circle" coords="537,50,40" href="http://www.naver.com">
+            <area shape="circle" coords="615,65,50" href="http://www.naver.com">
+
+        </map>
+    </div>
+
+    
+</body>
+</html>

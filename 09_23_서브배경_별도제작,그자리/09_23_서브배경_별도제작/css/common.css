@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {margin:0;padding:0}
+html, body {width:100%;height:100%;}
+body {font-size:14px;color:#444;background:#f9f9f9;}
+header, main, footer, section, nav {display:block;}
+ul, li {list-style:none;}
+a {color:#444;text-decoration:none;}
+.fixedclear:after {content:"";display:block;clear:both;}
+/* HTML에 class="fixedclear" 로 넣어서 밑에것들 css에서 다 제거 가능 
+#wrap #header .wrap > ul:after {content:"";display:block;clear:both;}
+#wrap #main #section2 > ul:after {content:"";display:block;clear:both;}
+#wrap #footer .wrap > ul:after {content:"";display:block;clear:both;}
+ */
+ .hide {display:none;}

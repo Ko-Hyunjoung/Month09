@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>04-17-1 이미지 맵 map shape='rect' 직사각형 영역 생성 사용 방법</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="04-17-1 이미지 맵 map shape='rect' 직사각형 영역 생성 사용 방법">
+    <meta name="publisher" content="Ko Hyunjoung">
+
+    <style>
+        img {width:744px;}
+        /* 원래 이 크기라 안적어도 되는데, 가끔씩 누를 때 깜빡거릴 수 있어서 써주면 좋아요. */
+        /* area:active {outline:3px dotted red}  */
+        /* area {outline:3px dashed red}  */
+        area:active {outline:1px solid #f00;} 
+        /* :active는 가상클래스로 '클릭할 때만 보여라~'해서 넣은 거예요! */
+        /* 이미지 클릭시 보이는 색깔 테두리 */
+        /* 0에는 0px 이렇게 픽셀 안붙이고 1부터 붙여요, 숫자를 키울수록 테두리가 두꺼워져요 */
+        /* solid는 채워진 실선, dotted는 점선 dashed는 긴 점선 */
+        /* #다음에 rgb 컬러순이고 f가 절대값이라 #f00은 레드 #0f0은 그린 #00f는 블루 */
+
+    </style>
+</head>
+<body>
+<!-- 
+    미만 < &lt; 엔티티 코드 문자   less than
+    초과 > &gt;                    great than
+ -->
+    <h1>04-17-1 이미지 맵 &lt;map shape='rect'&gt; <br>직사각형 영역 생성 사용 방법</h1>
+    <div>
+        <img src="./img/restaurant-img4.jpg" alt="" usemap="#rectmap">
+        <map name="rectmap">
+            <area shape="rect" coords="17,181,337,603" href="http://www.naver.com">
+       <!-- <area shape="도형" coords="left 좌표 x1, top 좌표 y1, right 좌표 x2, bottom 좌표 y2"
+            href="프로토콜://컴퓨터이름.회사명.회사종류.국가명"> -->
+            <area shape="poly" coords="338,180,338,530,367,530,367,602,18,602,18,180" href="http://www.naver.com">
+            <area shape="rect" coords="337,79,727,531" href="http://www.naver.com" target="_blank">
+            <area shape="circle" coords="536,50,40" href="http://www.tjoeun.co.kr" target="_blank">
+            <area shape="circle" coords="615,65,50" href="http://www.tjoeun.co.kr" target="_blank">
+       <!-- <area shape="circle" coords="원의 중심x 좌표,원의 중심y 좌표,반지름 r" -->
+            <!-- left값 + 반지름 + 원중심 (x) -->
+            <!-- top값 + 반지름 + 원중심 (y) -->
+            <area shape="poly" coords="262,600,370,600,370,538,400,535,450,547,500,580,520,630,475,670,380,682,308,660,275,635" href="http://www.tjoeun.co.kr" target="_blank">
+        </map>
+    </div>
+
+    <!-- 다시 상세 필기 -->
+
+    <h1>04-17-1 이미지 맵 &lt;map shape='rect'&gt;&lt;/map&gt;</h1>
+    <div>
+        <img src="./img/restaurant-img4.jpg" alt="" usemap="#rectmap">
+        <map name="rectmap2">
+                        <!-- x1좌표,y1좌표,x2좌표,y2좌표 -->
+            <area shape="rect" coords="17,181,337,603" href="http://www.naver.com">    
+                        <!-- x1좌표,y1좌표,x2좌표,y2좌표 -->
+            <area shape="rect" coords="337,79,727,531" href="http://www.tjoeun.co.kr" target="_blank">    
+                        <!-- 원의 중심 x좌표, 원의 중심 y좌표, 반지름 -->
+            <area shape="circle" coords="536,50,40" href="http://www.tjoeun.co.kr" target="_blank">    
+                        <!-- 원의 중심 x좌표, 원의 중심 y좌표, 반지름 -->
+                        <!-- right(665) - left(565) = 지름 (100) -->
+                        <!-- 지름(100)/2  =  반지름 (50) -->
+                        <!-- left값(565) + 반지름(50) = 원중심x (615) -->
+                        <!-- top값(15) + 반지름(50) = 원중심y (65) -->
+            <area shape="circle" coords="615,65,50" href="http://www.tjoeun.co.kr" target="_blank">    
+        </map>
+
+    </div>
+</body>
+</html>

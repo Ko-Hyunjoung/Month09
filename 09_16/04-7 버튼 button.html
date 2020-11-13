@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>04-7 버튼 button | inline</title>
+    <!-- 위에는 창 제목의 의미     /    서브제목 | 메인제목-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="Ko Hyunjoung">
+    <meta name="title" content="04-7 버튼 button | inline">
+    <!-- 위에는 엔진에서 읽어서 검색어로 노출되게 만들어주는 중요한 것 -->
+
+    <!-- 내부스타일 사용 방법 (둘 다 같이 바뀌고) -->
+    <style>
+        button {cursor:pointer;}
+    </style>
+</head>
+<body>
+    
+    <h1>04-7 버튼 button</h1>
+    <p>
+        <!-- 
+        마우스 커서 모양 바꾸기 스타일 지정 
+        pointer 검지 손가락모양
+        default 마우스 기본 화살(arrow)모양
+        태그에 직접 사용하는 스타일 방법 - 인라인 스타일 
+        ( 접근하기 어렵게 하기 위해 쇼핑몰에서 주로 쓰는 방식)
+        -->
+        <button style="cursor:pointer;">클릭버튼</button>    
+        <button type="button" style="cursor:default;">클릭버튼</button>
+        <button type="button">클릭버튼</button>
+        <!-- 위에서 내부스타일 써도 밑에 쓰인 애들이 항상 우선 -->
+    </p>
+
+    <!-- 
+        <button>클릭버튼</button>
+        <button type="button">클릭버튼</button>
+        밑에가 오리지널인데 생략된 것 (둘 다 같아)
+    -->
+</body>
+</html>
